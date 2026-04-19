@@ -110,8 +110,9 @@ def _run_prediction(features: list) -> dict:
 
 
 # ── Routes ───────────────────────────────────────────────────────────────────
-@app.route("/", methods=["GET"])
-def home():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
     return render_template("index.html")
 
 
