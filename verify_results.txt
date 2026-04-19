@@ -1,0 +1,71 @@
+
+--- Loading Model and Scaler ---
+Success: Model and Scaler loaded.
+
+--- Loading and Preprocessing Dataset ---
+Dataset Loaded: 195 samples, 22 features selected.
+Split completed: 39 samples in test set.
+
+--- Individual Sample Comparisons ---
+Sample 1: Actual: 1 | Predicted: 1 | Prob(P): 0.9950
+Sample 2: Actual: 1 | Predicted: 1 | Prob(P): 0.8650
+Sample 3: Actual: 1 | Predicted: 1 | Prob(P): 0.9800
+Sample 4: Actual: 1 | Predicted: 1 | Prob(P): 0.8950
+Sample 5: Actual: 1 | Predicted: 1 | Prob(P): 0.9750
+Sample 6: Actual: 1 | Predicted: 1 | Prob(P): 0.9250
+Sample 7: Actual: 1 | Predicted: 1 | Prob(P): 0.9950
+Sample 8: Actual: 1 | Predicted: 1 | Prob(P): 0.7350
+Sample 9: Actual: 1 | Predicted: 1 | Prob(P): 0.8700
+Sample 10: Actual: 1 | Predicted: 1 | Prob(P): 0.6050
+Sample 11: Actual: 0 | Predicted: 1 | Prob(P): 0.8250
+Sample 12: Actual: 1 | Predicted: 1 | Prob(P): 1.0000
+Sample 13: Actual: 1 | Predicted: 1 | Prob(P): 0.9550
+Sample 14: Actual: 1 | Predicted: 1 | Prob(P): 1.0000
+Sample 15: Actual: 1 | Predicted: 1 | Prob(P): 0.9900
+Sample 16: Actual: 1 | Predicted: 1 | Prob(P): 0.9200
+Sample 17: Actual: 1 | Predicted: 1 | Prob(P): 0.9000
+Sample 18: Actual: 1 | Predicted: 1 | Prob(P): 0.6650
+Sample 19: Actual: 0 | Predicted: 0 | Prob(P): 0.4000
+Sample 20: Actual: 1 | Predicted: 1 | Prob(P): 0.7200
+Sample 21: Actual: 1 | Predicted: 1 | Prob(P): 0.9550
+Sample 22: Actual: 1 | Predicted: 1 | Prob(P): 0.5900
+Sample 23: Actual: 1 | Predicted: 1 | Prob(P): 0.9950
+Sample 24: Actual: 0 | Predicted: 0 | Prob(P): 0.0400
+Sample 25: Actual: 1 | Predicted: 1 | Prob(P): 0.9900
+Sample 26: Actual: 1 | Predicted: 1 | Prob(P): 0.8250
+Sample 27: Actual: 1 | Predicted: 1 | Prob(P): 1.0000
+Sample 28: Actual: 1 | Predicted: 1 | Prob(P): 0.9450
+Sample 29: Actual: 0 | Predicted: 0 | Prob(P): 0.1950
+Sample 30: Actual: 1 | Predicted: 1 | Prob(P): 0.9950
+Sample 31: Actual: 1 | Predicted: 1 | Prob(P): 0.8250
+Sample 32: Actual: 1 | Predicted: 1 | Prob(P): 0.9250
+Sample 33: Actual: 1 | Predicted: 1 | Prob(P): 0.9550
+Sample 34: Actual: 0 | Predicted: 0 | Prob(P): 0.3150
+Sample 35: Actual: 1 | Predicted: 1 | Prob(P): 0.9450
+Sample 36: Actual: 0 | Predicted: 0 | Prob(P): 0.1700
+Sample 37: Actual: 1 | Predicted: 1 | Prob(P): 1.0000
+Sample 38: Actual: 0 | Predicted: 1 | Prob(P): 0.8500
+Sample 39: Actual: 1 | Predicted: 1 | Prob(P): 0.9300
+
+--- Final Evaluation Metrics ---
+Accuracy  : 94.87%
+Precision : 94.12%
+Recall    : 100.00%
+
+Confusion Matrix:
+[[ 5  2]
+ [ 0 32]]
+
+--- Detailed Classification Report ---
+              precision    recall  f1-score   support
+
+           0       1.00      0.71      0.83         7
+           1       0.94      1.00      0.97        32
+
+    accuracy                           0.95        39
+   macro avg       0.97      0.86      0.90        39
+weighted avg       0.95      0.95      0.95        39
+
+
+--- Model Verification Conclusion ---
+STATUS: Model is working correctly and shows strong predictive power on the dataset.
