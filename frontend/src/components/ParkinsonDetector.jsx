@@ -274,7 +274,7 @@ export default function ParkinsonDetector({ mode = 'manual' }) {
       let res;
       if (mode === 'manual') {
         const features = buildFeatureArray(values)
-        res = await fetch('http://localhost:5000/predict', {
+        res = await fetch('/predict', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ features }),
@@ -294,7 +294,7 @@ export default function ParkinsonDetector({ mode = 'manual' }) {
         const formData = new FormData()
         formData.append('audio', fileToSend)
         
-        const fetchPromise = fetch('http://localhost:5000/predict-audio', {
+        const fetchPromise = fetch('/predict-audio', {
           method: 'POST',
           body: formData,
         })

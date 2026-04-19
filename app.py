@@ -111,8 +111,8 @@ def _run_prediction(features: list) -> dict:
 
 # ── Routes ───────────────────────────────────────────────────────────────────
 @app.route("/", methods=["GET"])
-def index():
-    return jsonify({"status": "healthy", "message": "Parkinson's Prediction API is running"}), 200
+def home():
+    return render_template("index.html")
 
 
 @app.route('/predict-audio', methods=['POST'])
