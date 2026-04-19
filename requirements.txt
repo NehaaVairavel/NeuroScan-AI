@@ -8,3 +8,4 @@ praat-parselmouth
 pandas
 librosa
 soundfile
+gunicorn
