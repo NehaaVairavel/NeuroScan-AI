@@ -76,7 +76,7 @@ def _run_prediction(features: list) -> dict:
         prob = float(probs[1]) # Probability of class 1 (Parkinson's)
 
         # 3. Decision Logic — threshold set to 0.60 (sweet spot to balance false positives and false negatives)
-        detected = prob >= 0.60
+        detected = prob >= 0.70
         confidence = prob if detected else (1 - prob)
         confidence_pct = round(confidence * 100, 2)
 
