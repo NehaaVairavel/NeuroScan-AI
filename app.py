@@ -75,9 +75,8 @@ def _run_prediction(features: list) -> dict:
         probs = model.predict_proba(data_scaled)[0]
         prob = float(probs[1]) # Probability of class 1 (Parkinson's)
 
-        # 3. Decision Logic — threshold raised to 0.75 to reduce false positives
-        # (UCI dataset has 75% Parkinson bias, so a higher bar is needed for healthy classification)
-        detected = prob >= 0.75
+        # 3. Decision Logic — threshold set to 0.50 for standard binary classification
+        detected = prob >= 0.50
         confidence = prob if detected else (1 - prob)
         confidence_pct = round(confidence * 100, 2)
 
